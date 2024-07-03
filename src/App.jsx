@@ -9,17 +9,19 @@ import Experience from './components/Experience'
 import SectionContainer from './components/SectionContainer'
 import Footer from './components/Footer'
 import Code from './icons/Code';
+import Projects from './components/Projects'
 
 export default function App() {
     return (
         <>
-            <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+            <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+            {/* <div className="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
             <Header />
 
             <div className='px-4'>
                 <SectionContainer>
                     <img src={LinkedinPhoto} alt="Dani photo" className='rounded-full size-12 mb-4' />
-                    <h1 className='text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'>Hey, soy Dani
+                    <h1 className='text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'>Hey, soy Dani 🌟
                         <a href="https://linkedin.com/in/danielyustealvarez" target='_blank' rel='noopener' className='flex justify-center items-center'>
                             <Badge avaliable="Disponible para trabajar" />
                         </a>
@@ -34,28 +36,26 @@ export default function App() {
                     <nav className='flex flex-wrap gap-4 mt-8'>
                         <a href="https://linkedin.com/in/danielyustealvarez" target="_blank" className='bg-white/5 border border-white/10 rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10'><LinkedIn className="size-4 lg:size-6" />LinkedIn</a>
                         <a href="https://github.com/Yuste3" target='_blank' className='bg-white/5 border border-white/10 rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10'><Github className="size-4 lg:size-6" /> GitHub</a>
-                        <a href="mailto:yustealvarez.daniel@gmail.com" target='_blank' className='bg-white/5 border border-white/10 rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10'><Gmail className="size-4 lg:size-6" />yustealvarez.daniel@gmail.com</a>
+                        <a href="mailto:yustealvarez.daniel@gmail.com" target='_blank' className='bg-white/5 border border-white/10 rounded-full flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-xs md:text-base transition hover:scale-110 hover:bg-white/10'><Gmail className="size-4 lg:size-6" />Contáctame</a>
                     </nav>
                 </SectionContainer>
 
                 <SectionContainer id="experience">
-                    <h2 className='text-2xl font-semibold mb-6 flex gap-x-3 items-center'>💼 Experiencia laboral</h2>
+                    <h2 className='text-3xl font-semibold mb-6 flex gap-x-3 items-center'>💼 Experiencia laboral</h2>
                     <Experience />
                 </SectionContainer>
 
                 <SectionContainer id="projects">
-                    <h2 className='text-2xl font-semibold mb-6 flex gap-x-3 items-center'>
+                    <h2 className='text-3xl font-semibold mb-6 flex gap-x-3 items-center'>
                         <Code className="size-7" />
-                        Experiencia laboral
+                        Proyectos
                     </h2>
-                    <Experience />
+                    <Projects />
                 </SectionContainer>
 
 
             </div>
-            <SectionContainer>
-                <Footer />
-            </SectionContainer>
+            <Footer />
 
         </>
     )

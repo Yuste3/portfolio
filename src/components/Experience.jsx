@@ -14,7 +14,7 @@ export default function Experience() {
         },
         {
             id: 2,
-            date: "January 2024 - March 2024",
+            date: "February 2024 - April 2024",
             title: "Grupo Oesía",
             description: "Empleado en prácticas solucionando bugs, desarrollando API Rest, y gestionando algunos servicios de AWS.",
             link: "#"
