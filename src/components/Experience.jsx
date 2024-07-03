@@ -6,7 +6,7 @@ export default function Experience() {
     const EXPERIENCE = [
         {
             id: 1,
-            date: "March 2024 - June 2024",
+            date: "Marzo 2024 - Junio 2024",
             title: "Coforge",
             description: "Empleado en prácticas full stack implementando API Rest con sus respectivas páginas web.",
             link: "#"
@@ -14,8 +14,22 @@ export default function Experience() {
         },
         {
             id: 2,
-            date: "February 2024 - April 2024",
+            date: "Febrero 2024 - Abril 2024",
             title: "Grupo Oesía",
+            description: "Empleado en prácticas solucionando bugs, desarrollando API Rest, y gestionando algunos servicios de AWS.",
+            link: "#"
+        },
+        {
+            id: 3,
+            date: "Octubre 2022 - Actualidad",
+            title: "Alcampo",
+            description: "Pescadero perfeccionando el trato con el cliente, el trabajo en equipo y el liderazgo de este.",
+            link: "#"
+        },
+        {
+            id: 4,
+            date: "Septiembre 2016 - Junio 2022",
+            title: "Conservatorio Profesional de Danza Carmen Amaya",
             description: "Empleado en prácticas solucionando bugs, desarrollando API Rest, y gestionando algunos servicios de AWS.",
             link: "#"
         }
